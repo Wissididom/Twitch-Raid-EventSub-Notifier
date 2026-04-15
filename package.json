@@ -19,6 +19,6 @@
     "yesno": "^0.4.0"
   },
   "devDependencies": {
-    "prettier": "^3.8.2"
+    "prettier": "^3.8.3"
   }
 }
