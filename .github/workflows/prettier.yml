@@ -20,6 +20,7 @@ jobs:
         uses: pnpm/setup@v2.0.1
         with:
           version: 11
+          install: false
       - name: Install dependencies
         run: |
           pnpm ci
