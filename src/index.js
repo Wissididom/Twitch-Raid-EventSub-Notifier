@@ -128,7 +128,7 @@ app.use(
   }),
 );
 
-app.get("/", (req, res) => res.send("Twitch Raid EventSub Webhook Endpoint"));
+app.get("/", (req, res) => res.send("Twitch Raid EventSub Notifier Endpoint"));
 
 app.post("/", async (req, res) => {
   let secret = process.env.EVENTSUB_SECRET;
