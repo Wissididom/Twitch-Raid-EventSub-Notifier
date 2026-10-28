@@ -1,7 +1,7 @@
 FROM node:26-alpine
 WORKDIR /app
 RUN --mount=type=bind,source=package.json,target=package.json \
-    --mount=type=bind,source=pnpm-lock.yaml,target=pnpm-lock.yaml \
+    --mount=type=bind,source=package-lock.json,target=package-lock.json \
     npm ci --omit=dev
 COPY . .
 EXPOSE 3000
